@@ -8,7 +8,8 @@ use October\Rain\Database\Traits\Validation;
  */
 class Signups extends Model
 {
-    
+    use \October\Rain\Database\Traits\Validation;
+
     /**
      * @var string The database table used by the model.
      */
@@ -26,7 +27,7 @@ class Signups extends Model
 
     public $rules = [
         'name' => 'required',
-        'email' => 'required|email',
+        'email' => 'required|email|unique:jasonswint_flyenotify_signups',
     ];
 
     /**
