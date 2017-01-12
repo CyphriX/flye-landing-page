@@ -81,7 +81,7 @@ class Plugin extends PluginBase
             'flyenotify' => [
                 'label'       => 'FlyeNotify',
                 'url'         => Backend::url('jasonswint/flyenotify/signups'),
-                'icon'        => 'icon-leaf',
+                'icon'        => 'icon-credit-card',
                 'permissions' => ['jasonswint.flyenotify.manage_signups'],
                 'order'       => 500,
             ],
