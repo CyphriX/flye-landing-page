@@ -1,0 +1,45 @@
+title = "New Smart Card - Transform your wallet!"
+url = "/"
+layout = "default"
+is_hidden = 0
+==
+<div class="jumbotron">
+    <div class="container">
+        {% content "welcome.htm" %}
+    </div>
+</div>
+<div id="flyecard">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{{ 'assets/images/flye1.jpg' |theme }}"/>
+        </div>
+        <div class="col-md-6 container">
+            <form class="form-vertical">
+                <h3>#NewSmartCard
+                    <small>Transform your wallet</small>
+                </h3>
+                <p class="lead">Be among the first to get your hands on this tiny technological marvel when it's
+                    released to
+                    the public! Just enter your information below.</p>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label for="name">Name: </label>
+                        <input class="form-control" id="name" name="name"/>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="email">E-mail address: </label>
+                        <input class="form-control" id="email" name="email"/>
+                    </div>
+                </div>
+                <br>
+                <button class="btn btn-success form-control">Tell me when I can get mine!</button>
+                <small><p class="muted credit text-center">Can't wait? <a href="#">Ask me how to get it before the public release.</a></p></small>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="container">
+
+    <p>
+    </p>
+</div>
