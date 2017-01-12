@@ -62,12 +62,10 @@ class Plugin extends PluginBase
      */
     public function registerPermissions()
     {
-        return []; // Remove this line to activate
-
         return [
-            'jasonswint.flyenotify.some_permission' => [
+            'jasonswint.flyenotify.manage_signups' => [
                 'tab' => 'FlyeNotify',
-                'label' => 'Some permission'
+                'label' => 'Manage FlyeNotify Signups'
             ],
         ];
     }
@@ -84,7 +82,7 @@ class Plugin extends PluginBase
                 'label'       => 'FlyeNotify',
                 'url'         => Backend::url('jasonswint/flyenotify/signups'),
                 'icon'        => 'icon-leaf',
-                'permissions' => ['jasonswint.flyenotify.*'],
+                'permissions' => ['jasonswint.flyenotify.manage_signups'],
                 'order'       => 500,
             ],
         ];
