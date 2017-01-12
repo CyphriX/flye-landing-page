@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Sign Up
+
+# Model Form Field configuration
+form: $/jasonswint/flyenotify/models/signups/fields.yaml
+
+# Model Class name
+modelClass: JasonSwint\FlyeNotify\Models\Signups
+
+# Default redirect location
+defaultRedirect: jasonswint/flyenotify/signups
+
+# Create page
+create:
+    title: Create Sign Up
+    redirect: jasonswint/flyenotify/signups/update/:id
+    redirectClose: jasonswint/flyenotify/signups
+
+# Update page
+update:
+    title: Edit Sign Up
+    redirect: jasonswint/flyenotify/signups
+    redirectClose: jasonswint/flyenotify/signups
+
+# Preview page
+preview:
+    title: Preview Sign Up

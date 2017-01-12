@@ -449,3 +449,7 @@
 body {
   padding-top: 0px;
 }
+
+.validation {
+  color: red;
+}

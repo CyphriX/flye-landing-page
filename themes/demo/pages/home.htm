@@ -2,6 +2,8 @@ title = "New Smart Card - Revolutionize your wallet!"
 url = "/"
 layout = "default"
 is_hidden = 0
+
+[signUp]
 ==
 <div class="jumbotron">
     <div class="container">
@@ -14,28 +16,7 @@ is_hidden = 0
             <img src="{{ 'assets/images/flye1.jpg' |theme }}"/>
         </div>
         <div class="col-md-6 container">
-            <form class="form-vertical">
-                <h3>#NewSmartCard<br class="hidden-md hidden-lg">
-                    <small>Revolutionize your wallet</small>
-                </h3>
-                <p class="lead">Be among the first to get your hands on this tiny technological marvel when it's
-                    released to
-                    the public!</p>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <label for="name">Name: </label>
-                        <input class="form-control" id="name" name="name"/>
-                    </div>
-                    <div class="col-sm-6">
-                        <label for="email">E-mail address: </label>
-                        <input class="form-control" id="email" name="email"/>
-                    </div>
-                </div>
-                <br>
-                <button class="btn btn-success form-control">Tell me when I can get mine!</button>
-                <small><p class="muted credit text-center">Can't wait? <a href="#">Ask us how to get it before the
-                    public release.</a></p></small>
-            </form>
+            {% component 'signUp' %}
         </div>
     </div>
 </div>
@@ -52,7 +33,7 @@ is_hidden = 0
                 you'd like to know when the cards are released to the public, be sure to put in your name and e-mail
                 address above, and we'll let you know as soon as we have a release date.</p>
             <p>If you're like us, and you're wondering how you can cash in on this awesome new piece of technology when
-                it EXPLODES onto the market, just <a href="#">get in touch with us</a> and we'll show you how!</p>
+                it EXPLODES onto the market, just <a href="mailto:GetTheNewSmartCard@gmail.com">get in touch with us</a> and we'll show you how!</p>
         </div>
         <div class="col-md-4">
             <p><strong>IT'S FLEXIBLE!</strong><br>Just like a smart phone, the smart card will get "smarter" over time
